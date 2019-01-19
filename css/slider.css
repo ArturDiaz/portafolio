@@ -1,0 +1,26 @@
+#contenido #inicio{
+	width: 100%;
+	padding-top: 50px;
+}
+
+#contenido #slider{
+	height: 450px;
+	width: 100%;
+	overflow: hidden;
+	background:  url("../imagenes/banner1.jpg");
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	animation: imag 10s infinite alternate;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+
+@keyframes imag{
+	from{
+		background-size: 1380px;
+		background-position: left center;
+	}
+	to{
+		background-size: 1920px;
+		background-position: right center;
+	}
+}

@@ -1,0 +1,345 @@
+@import url('loader.css');
+@import url('slider.css');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+}
+header #container-header{
+	width: 100%;
+	height: 50px;
+	background: rgba(14,17,41,0.9);
+	color: #fff;
+	display: flex;
+	justify-content:space-between ;	
+	position: fixed;
+	box-shadow: 1px 1px 10px -8px #fff;
+	z-index: 900;
+}
+
+h1 a{
+	font-size: 20px;
+	margin: 10px 0 0 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+#btn-menu{
+	display: none;
+}
+header label {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+#menu ul{
+	background: rgba(14,17,41,0.8);
+	display: flex;
+	list-style: none;
+}
+
+#menu ul ul{
+	display: none;
+}
+
+#menu a{
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 20px;
+	display: block;
+
+}
+
+#menu a:hover{
+	background: rgba(255,255,255,0.5);
+}
+
+#menu ul li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+
+
+@media (max-width:850px){
+	header label{
+		display: block;
+		padding-right: 5px;
+	}
+	#menu{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+	}
+	#menu ul{
+		display: block;
+	}
+	#menu ul li{
+		border-bottom: 2px solid rgba(255,255,255,0.3);
+	}
+	#menu ul li:hover ul{
+		display: none;
+		position: static;
+	}
+	#btn-menu:checked ~ #menu{
+		transform: translateX(0%);
+	}
+}
+/*-------------------- Acerca de Mi ----------------*/
+#acerca_mi{
+	background: rgba(251,66,25,0.9);
+	padding: 20px 0;
+	color: #fff;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+	width: 90%;
+	margin: 20px auto;
+}
+#acerca_mi h1{
+	text-align: center;
+	padding: 10px 0 10px 0;
+	margin: 5px 0 10px 0;
+	background: rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+#info-1{
+	margin-top: 10px;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+.mi-imagen{
+	width: 50%;
+	height: 300px;
+	margin: 15px;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+	
+	transition: 1s;
+	border: 0px solid #fff;
+}
+.mi-imagen:hover{
+	border: 10px solid #fff;
+	transition: 0.2s;
+	border-radius: 20px;
+}
+.mi-imagen img{
+	width: 100%;
+	background-size:cover;
+	min-width: 400px;
+	
+	transition: 0.8s;
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+}
+
+.mi-imagen img:hover{
+	cursor: pointer;
+	animation: anim-min 0.8s;
+	-webkit-animation: anim-min 0.8s;
+	-o-animation: anim-min 0.8s;
+	
+	transition: 0.8s;
+	filter: grayscale(70%);
+	-webkit-filter: grayscale(70%);
+	-o-filter: grayscale(70%);
+}
+
+.texto-cont{
+	width: 40%;
+	margin: 0px 20px 0 0;
+	
+}
+
+/* ----------- Habilidades ---------- */
+#habilidades{
+	background: rgba(14,17,41,0.9);
+	width: 100%;
+	height: 50%;
+	color: #fff;
+	margin: 15px auto;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+#habilidades h1{
+	padding: 10px 0 10px 0;
+	margin: 5px 0 10px 0;
+	background: rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.9);
+}
+#habilidades #misTabs{
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+}
+
+#html, #css, #js, #jquery, #responsive, #bootstrap{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	color: rgba(251,66,25,0.9);
+
+}
+#misTabs p{
+	width: 100%;
+	margin: 5px 0 10px 0;
+}
+#html h3, #css h3, #js h3, #jquery h3, #responsive h3, #bootstrap h3{
+	width: 100%;
+	padding: 10px 0 2px 0;
+}
+.circulo{
+	width: 150px;
+	height: 150px;
+	background: blue;
+	border-radius: 50%;
+	box-shadow: -30px -30px 0 0 rgba(0,0,0,0.15) inset,
+				-70px -40px 0 0 rgba(0,0,0,0.1) inset,
+				5px 5px 0 0 rgba(255,255,255,0.2) inset;
+	overflow: hidden;
+	/*background-size: cover;*/
+	position: relative;
+	transition: 0.5s;
+}
+.circulo span{
+	background: url("../imagenes/olas.jpg");
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	transform: translateX(-350px) translateY(40px);
+	transition: transform 0.5s;
+}
+.circulo .art1{
+	background: url("../imagenes/olas.jpg");
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	transform: translateX(-350px) translateY(50px);
+}
+.circulo .art2{
+	background: url("../imagenes/olas.jpg");
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	transform: translateX(-350px) translateY(48px);
+}
+.circulo .art3{
+	background: url("../imagenes/olas.jpg");
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	transform: translateX(-350px) translateY(35px);
+}
+.circulo:hover {
+	transition: 0.5s;
+	width: 200px;
+	height: 200px;
+
+}
+.circulo h1{
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/*-------------- Otros Conocimientos ----------*/
+#conocimientos{
+	background: rgba(31,31,31,0.9);
+	color:  rgba(225,225,225,1.00);
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 20px 0;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+#conocimientos h1{
+	background: rgba(255,255,255,0.1);
+	text-align: center;
+	margin: 5px 0 10px 0;
+	padding: 10px 0 10px 0;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+.libreria{
+	height: 400px;
+	width: 90%;
+	margin: auto;
+	background: #eee;
+	display: flex;
+	flex-wrap: wrap;
+}
+.libreria_item{
+	flex-grow: 1;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
+	
+	justify-content: center;
+	align-items: center;
+	
+	display: flex;
+	transition: flex-grow 0.2s;
+	border: 1px solid #fff;
+	
+	position: relative;
+}
+.libreria_item:nth-child(1){
+	background: rgba(14,17,41,0.8);
+}
+.libreria_item:nth-child(2){
+	background: rgba(251,66,25,0.9);
+}
+.libreria_item:hover{
+	flex-grow: 10;
+}
+.diseno_cont, .marketing_cont{
+	display: none;
+}
+.libreria_item:hover .titulo_item{
+	transform: translateY(-300%);
+	transition: transform 0.2s 0.2s;
+}
+.libreria_item:hover .diseno_cont{
+	display: block;
+	color: #fff;
+	transition: 0.4s 0.4s;
+}
+.libreria_item:hover .marketing_cont{
+	display: block;
+	color: #fff;
+	transition: 0.4s 0.4s;
+}
+.libreria_item:hover img{
+	width: 100px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translateX(-30%) translateY(-50%);
+}
+.libreria_item img:hover{
+	padding: 5px;
+	transition: 0.2s;
+}
+
+
+/* scroll */
+.seleccionado{
+	background: rgba(255,255,255,0.5);
+}

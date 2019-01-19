@@ -1,0 +1,154 @@
+#loader{
+	background: rgba(14,17,41,1);
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	color: #fff;
+	display: flex;
+	z-index: 1000;
+}
+
+.container-loader{
+	margin: auto;
+	
+	position: relative;
+	z-index: 1000;
+}
+
+.container-loader:before{
+	content: "";
+	position: absolute;
+	top: 95%;
+	left: 15%;
+	width: 100px;
+	height: 1px;
+	background: #fff;
+	
+	animation: lineas 0.9s;
+}
+
+.container-loader:after{
+	content: "";
+	position: absolute;
+	top: 95%;
+	right: 0%;
+	width: 20px;
+	height: 1px;
+	background: #fff;
+	
+	animation: lineas 0.5s;
+}
+
+.container-loader p:after{
+	content: "";
+	position: absolute;
+	top: 95%;
+	right: 15%;
+	width: 40px;
+	height: 1px;
+	background: #fff;
+	
+	animation: lineas 0.2s;
+}
+
+.container-loader p{
+	font-size: 35px;
+	transition: transform 0.5;
+	animation: titulo 0.8s;
+}
+
+.adorno:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20%;
+	width: 15px;
+	height: 15px;
+	background: rgba(255,255,255,0.8);
+	visibility: hidden;
+	animation: cub1 0.3s 0.5s;
+}
+.adorno:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -10%;
+	width: 10px;
+	height: 10px;
+	background: rgba(255,255,255,1);
+	visibility: hidden;
+	animation: cub2 0.3s 0.1s;
+}
+#loader .adorno h6:before{
+	content: "";
+	position: absolute;
+	top: -35%;
+	right: -25%;
+	width: 5px;
+	height: 5px;
+	background: rgba(255,255,255,0.2);
+	visibility: hidden;
+	animation: cub1 0.3s 0.7s;
+}
+#loader .adorno h6:after{
+	content: "";
+	position: absolute;
+	top: 90%;
+	right: -20%;
+	width: 7px;
+	height: 7px;
+	background: rgba(255,255,255,0.5);
+	visibility: hidden;
+	animation: cub2 0.3s 0.3s;
+}
+
+
+@keyframes titulo{
+	0%{
+		transform: translateX(-1000%);
+	}
+	30%{
+		transform: translateX(10%);
+	}
+	80%{
+		transform: translateX(-10%);
+		transition: transform 0.5;
+	}
+	90%{
+		transform: translateX(5%);
+	}
+	100%{
+		transform: translateX(0%);
+		transition: transform 0.5;
+	}
+}
+@keyframes lineas{
+	0%{
+		transform: translateX(-1000%);
+	}
+	70%{
+		transform: translateX(10%);
+	}
+	80%{
+		transform: translateX(-5%);
+	}
+	100%{
+		transform: translateX(0%);
+		transition: transform 0.5;
+	}
+}
+@keyframes cub1{
+	90%{
+		visibility: visible; 
+	}
+}
+@keyframes cub2{
+	70%{
+		visibility: visible; 
+	}
+}
+
+.cargado{
+	transform: translateY(-100%);
+	transition: all 0.5s;
+}
