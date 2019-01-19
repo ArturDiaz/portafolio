@@ -343,3 +343,17 @@ header label {
 .seleccionado{
 	background: rgba(255,255,255,0.5);
 }
+
+/* --- portafolio --- */
+#portafolio{
+	width:500px;
+	height: 500px;
+	background: blue;
+}
+
+/* --- contactame --- */
+#contactame{
+	width: 200px;
+	height: 500px;
+	background: blue;
+}
