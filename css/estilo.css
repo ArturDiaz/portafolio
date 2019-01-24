@@ -180,30 +180,43 @@ header label {
 	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.9);
 }
 #habilidades #misTabs{
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	padding: 5px;
+	font-size: 12px;
 }
 
-#html, #css, #js, #jquery, #responsive, #bootstrap{
+#dWeb, #dJS, #aHibridas, #ecommerce, #responsive{
 	width: 100%;
-	justify-content: center;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	color: rgba(251,66,25,0.9);
+	color: #fff;
 
 }
-#misTabs p{
-	width: 100%;
-	margin: 5px 0 10px 0;
+.titulo_habilidades{
+	width: 90%;
+	height: 10%;
+	background: rgba(76,141,211,0.9);
+	margin: auto;
+	padding: 20px;
+	border-radius: 10px;
+	justify-content: center;
+	display: flex;
+	position: relative;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.9);
 }
-#html h3, #css h3, #js h3, #jquery h3, #responsive h3, #bootstrap h3{
-	width: 100%;
-	padding: 10px 0 2px 0;
+.titulo_habilidades h3{
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-10%) translateY(-50%);
 }
+
 .circulo{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	background: blue;
 	border-radius: 50%;
 	box-shadow: -30px -30px 0 0 rgba(0,0,0,0.15) inset,
@@ -212,51 +225,56 @@ header label {
 	overflow: hidden;
 	/*background-size: cover;*/
 	position: relative;
-	transition: 0.5s;
+	transform: translateX(-100%);
 }
-.circulo span{
-	background: url("../imagenes/olas.jpg");
-	width: 500px;
-	height: 500px;
-	position: absolute;
-	transform: translateX(-350px) translateY(40px);
-	transition: transform 0.5s;
-}
-.circulo .art1{
-	background: url("../imagenes/olas.jpg");
-	width: 500px;
-	height: 500px;
-	position: absolute;
-	transform: translateX(-350px) translateY(50px);
-}
-.circulo .art2{
-	background: url("../imagenes/olas.jpg");
-	width: 500px;
-	height: 500px;
-	position: absolute;
-	transform: translateX(-350px) translateY(48px);
-}
-.circulo .art3{
-	background: url("../imagenes/olas.jpg");
-	width: 500px;
-	height: 500px;
-	position: absolute;
-	transform: translateX(-350px) translateY(35px);
-}
-.circulo:hover {
-	transition: 0.5s;
-	width: 200px;
-	height: 200px;
 
-}
-.circulo h1{
+.circulo h2{
+	font-size: 20px;
 	color: #fff;
 	position: absolute;
-	top: 35%;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	top: 50%;
+	left: 50%;
 	margin: auto;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.contenido_insignia{
+	width: 100%;
+	color: rgba(0,0,0,0.5);
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.insignia{
+	width: 150px;
+	height: 150px;
+	background: rgba(76,141,211,0.9);
+	margin: 20px 30px;
+	padding: 15px 10px;
+	position: relative;
+	color: #fff;
+	border-radius: 5px 5px 2px 2px;
+	text-align: center;
+}
+.insignia:after{
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 25px solid rgba(76,141,211,0.9);
+}
+hr{
+	color: #fff;
+	margin: 5px 0;
+}
+.insignia:hover img{
+	padding: 3px;
+	cursor: pointer;
 }
 
 /*-------------- Otros Conocimientos ----------*/
@@ -346,14 +364,14 @@ header label {
 
 /* --- portafolio --- */
 #portafolio{
-	width:500px;
+	width:50%;
 	height: 500px;
 	background: blue;
 }
 
 /* --- contactame --- */
 #contactame{
-	width: 200px;
+	width: 20%;
 	height: 500px;
 	background: blue;
 }
