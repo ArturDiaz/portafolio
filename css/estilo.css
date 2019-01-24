@@ -129,9 +129,8 @@ header label {
 	border: 0px solid #fff;
 }
 .mi-imagen:hover{
-	border: 10px solid #fff;
-	transition: 0.2s;
-	border-radius: 20px;
+	border: 4px solid #fff;
+	transition: all 0.2s;
 }
 .mi-imagen img{
 	width: 100%;
@@ -158,10 +157,17 @@ header label {
 
 .texto-cont{
 	width: 40%;
-	margin: 0px 20px 0 0;
+	margin: 10px 10px;
 	
 }
-
+@media (max-width:850px){
+	.mi-imagen{
+		width: 90%;
+	}
+	.texto-cont{
+		width: 90%;
+	}
+}
 /* ----------- Habilidades ---------- */
 #habilidades{
 	background: rgba(14,17,41,0.9);
@@ -195,7 +201,7 @@ header label {
 
 }
 .titulo_habilidades{
-	width: 90%;
+	width: 95%;
 	height: 10%;
 	background: rgba(76,141,211,0.9);
 	margin: auto;
