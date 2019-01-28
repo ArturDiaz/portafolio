@@ -161,6 +161,9 @@ header label {
 	
 }
 @media (max-width:850px){
+	#acerca_mi{
+		width: 100%;
+	}
 	.mi-imagen{
 		width: 90%;
 	}
@@ -290,7 +293,7 @@ hr{
 	width: 95%;
 	height: 50%;
 	margin: 20px auto;
-	padding: 20px 0 20px 0;
+	padding: 20px 0;
 	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
 	position: relative;
 }
@@ -334,7 +337,7 @@ hr{
 	border-radius: 50%;
 }
 .titulo_item{
-	margin: auto 8px;
+	margin: auto 4px;
 }
 .libreria_item:nth-child(1){
 	background: rgba(76,141,211,0.9);
@@ -418,6 +421,14 @@ hr{
 	}
 }
 
+.certificado{
+	margin: 20px 5%;
+}
+.certificado iframe{
+	width: 100%;
+	height: 600px;
+
+}
 
 /* -------- scroll ---------- */
 .seleccionado{
@@ -426,11 +437,61 @@ hr{
 
 /* --- portafolio --- */
 #portafolio{
-	width:50%;
-	height: 500px;
-	background: red;
+	width:100%;
+	height: 50%;
+	background: #fff;
+	text-align: center;
+}
+.contenido{
+	width: 100%;
+}
+.cont_header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.logos-h{
+	width: 100px;
+	height: 110px;
+	font-size: 80%;
+	padding-top: 5px;
+	margin: 10px;
+}
+.logos-h img{
+	width: 60%;
+	height: 60%;
+	margin: auto;
 }
 
+.proyectos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.proy_item{
+	width: 250px;
+	height: 300px;
+	margin: 5px;
+}
+.proy_item img{
+	width: 100%;
+	height: 50%;
+	padding: 5px;
+}
+.proy_item p{
+	padding: 5px;
+	font-size: 12px;
+}
+button{
+	width: 90%;
+	background: rgba(251,66,25,1);;
+	padding: 5px 0;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
 /* --- contactame --- */
 #contactame{
 	width: 20%;

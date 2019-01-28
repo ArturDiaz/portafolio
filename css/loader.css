@@ -10,7 +10,6 @@
 
 .container-loader{
 	margin: auto;
-	
 	position: relative;
 	z-index: 1000;
 }
@@ -151,4 +150,10 @@
 .cargado{
 	transform: translateY(-100%);
 	transition: all 0.5s;
+}
+
+@media (max-width:350px){
+	#loader{
+		display: none;
+	}
 }
