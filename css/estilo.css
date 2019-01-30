@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Play', sans-serif;
 }
 header #container-header{
 	width: 100%;
@@ -95,7 +95,7 @@ header label {
 }
 /*-------------------- Acerca de Mi ----------------*/
 #acerca_mi{
-	background: rgba(251,66,25,0.9);
+	background: rgba(240,52,0,1.00);
 	padding: 20px 0;
 	color: #fff;
 	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
@@ -442,6 +442,11 @@ hr{
 	background: #fff;
 	text-align: center;
 }
+#portafolio h1{
+	padding: 10px 0 10px 0;
+	margin: 5px 0 10px 0;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.3);
+}
 .contenido{
 	width: 100%;
 }
@@ -494,7 +499,102 @@ button{
 }
 /* --- contactame --- */
 #contactame{
-	width: 20%;
-	height: 500px;
-	background: blue;
+	width: 100%;
+	height: 50%;
+	background: rgba(240,52,0,1.00);
+	color: #fff;
+	margin: 20px auto;
+	padding: 20px 0;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.8);
+}
+#contactame h1{
+	text-align: center;
+	padding: 10px 0 10px 0;
+	margin: 5px 0 10px 0;
+	background: rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.9);
+}
+.contactos{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.formulario {
+	width: 450px;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+	margin: 25px;
+	justify-content: center;
+	padding: 20px 10px;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.5);
+}
+.formulario label{
+	margin: 20px auto;
+}
+#nombre, #email, #comentario{
+	width: 70%;
+	float: right;
+}
+#btn-enviar{
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	cursor: pointer;
+}
+#mensajeF{
+	width: 90%;
+	height: 30px;
+	padding-top: 5px;
+	margin: 10px auto;
+	background: rgba(255,255,255,0.1);
+	border-radius: 10px;
+	text-align: center;
+}
+.redes-sociales{
+	width: 450px;
+	background: rgba(255,255,255,0.1);
+	margin: 25px;
+	text-align: center;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 1px rgba(14,17,41,0.5);
+}
+.descripcion_rs{
+	padding: 15px 5px;
+}
+.redes_soc_log{
+	display: flex;
+	justify-content: center;
+}
+.iconoB{
+	width: 100px;
+	height: 80px;
+	background: green;
+	margin: 2px;
+}
+.derechos{
+	text-align: center;
+	display:block;
+	width: 400px;
+	margin: auto;
+	padding-top: 20px;
+}
+.derechos img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+/* --- footer --- */
+footer{
+	background: rgba(14,17,41,1);
+	color: #fff;
+	width: 100%;
+	height: 100px;
+	justify-content: space-between;
 }
