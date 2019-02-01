@@ -21,15 +21,31 @@
 	border-radius: 50%;
 	box-shadow: 0px 0px 12px 0px #fff;
 	border: 2px double #fff;
+	border-color: rgba(51,207,255,0.3) #fff;
 	text-align: center;
 	padding-top: 30px;
 	color: rgba(21,32,94,0.84);
+	transition: animation 0.5s;
+}
+@keyframes circulos{
+	from{
+		margin: 0px;
+		box-shadow: 0px 0px 5px 0px #fff;
+		border-color: #fff;
+	}
+	to{
+		margin: 15px;
+		box-shadow: 0px 0px 20px 0px #fff;
+		border-color: #fff rgba(51,207,255,0.3);
+	}
 }
 .circ_ad1{
 	width: 80px;
 	height: 80px;
 	top: 5%;
 	left: 20%;
+	animation: circulos 3.8s infinite alternate linear;
+
 }
 .circ_ad2{
 	width: 100px;
@@ -37,6 +53,7 @@
 	top: 50%;
 	left: 80%;
 	font-size: 25px;
+	animation: circulos 2.5s infinite alternate linear;
 }
 .circ_ad3{
 	width: 50px;
@@ -45,6 +62,7 @@
 	left: 12%;
 	font-size: 20px;
 	padding-top: 10px;
+	animation: circulos 3s infinite alternate linear;
 }
 .circ_ad4{
 	width: 100px;
@@ -53,6 +71,7 @@
 	left: 30%;
 	font-size: 20px;
 	padding-top: 35px;
+	animation: circulos 2.5s infinite alternate;
 }
 .circ_ad5{
 	width: 70px;
@@ -61,6 +80,7 @@
 	left: 52%;
 	font-size: 25px;
 	padding-top: 20px;
+	animation: circulos 3.24s infinite alternate linear;
 }
 .circ_ad6{
 	width: 50px;
@@ -69,6 +89,7 @@
 	left: 80%;
 	font-size: 15px;
 	padding-top: 15px;
+	animation: circulos 3.65s infinite alternate;
 }
 @keyframes imag{
 	from{
