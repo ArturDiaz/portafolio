@@ -16,6 +16,7 @@
 	
 	<div id="loader">
 		<div class="container-loader">
+			<img src="imagenes/logo-1.png" alt="logo-arturo">
 			<p>J. Arturo Diaz</p>
 			<div class="adorno"><h6></h6></div>
 		</div>
@@ -23,13 +24,16 @@
 	
 	<header>
 		<div id="container-header">
-			<h1><a href="#inicio">J. Arturo DC</a></h1>
+			<h1>
+				<img src="imagenes/logo-1.png" alt="Arturo Diaz" id="logo-arturo">
+				<a href="#inicio">J. Arturo DC</a>
+			</h1>
 			<input type="checkbox" id="btn-menu">
 			<label class="icon-menu" for="btn-menu"></label>
 			<div id="menu">
 				<ul>
-					<li><a href="#acerca_mi" class="btn_1">Acerca de Mi</a></li>
-					<li class="sub-menu"><a href="#habilidades" class="btn_2">Mis Habilidades<span class="iconoX"></span></a>
+					<li><a href="#acerca_mi" class="btn_1 icon-user">Acerca de Mi</a></li>
+					<li class="sub-menu"><a href="#habilidades" class="btn_2 icon-aprendiendo">Mis Habilidades</a>
 						<ul>
 							<li><a href="#habilidades">Desarrollo Web</a></li>
 							<li><a href="#habilidades">Desarrollo JavaScript</a></li>
@@ -38,14 +42,14 @@
 							<li><a href="#habilidades">Responsive Web Design</a></li>
 						</ul>
 					</li>
-					<li class="sub-menu"><a href="#conocimientos" class="btn_3">Otros Conocimientos<span class="iconoX"></span></a>
+					<li class="sub-menu"><a href="#conocimientos" class="btn_3 icon-calcular">Otros Conocimientos</a>
 						<ul>
 							<li><a href="#conocimientos">Marketing Digital</a></li>
 							<li><a href="#conocimientos">Diseño Grafico</a></li>
 						</ul>
 					</li>
-					<li><a href="#portafolio" class="btn_4">Portafolio</a></li>
-					<li><a href="#contactame" class="btn_5">Contáctame</a></li>
+					<li><a href="#portafolio" class="btn_4 icon-portafolio">Portafolio</a></li>
+					<li><a href="#contactame" class="btn_5 icon-ubicame">Contáctame</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,17 +75,18 @@
 			<h1 class="icon-user">Acerca de Mi</h1>
 			<div id="info-1">
 				<div class="mi-imagen">
-					<img id="imag1" src="imagenes/banner2.jpg" alt="imag1"/>
+					<img id="imag1" src="imagenes/imagen-arturo.jpg" alt="imag1"/>
 				</div>
 				<div class="texto-cont">
-					<h3>Desarrollador Web Junior</h3>
+					<h3>Desarrollador Web Jr.</h3>
 					<hr>
 					<br>
-					<p>Desarrollador Web Jr. y Desarrollador de JavaScript. Con los conocimientos en HTML5, CSS3, JavaScript, jQuery entro otros. Especializándome para Front End y Back End.<br> Egresado en Computación e Informática, con los conocimientos basicos de computacion y todo lo relacionado, con amplias ganas de ejercer mis conocimientos y desarrollar nuevas soluciones presentadas.<br>Amante de la tecnología y en busqueda de mayores conocimientos en el ambito informatico y tecnologico, estudiando aun para la completa implementacion de mis conocimientos.</p>
+					<p>Desarrollador Web Jr. y Desarrollador de JavaScript. Con los conocimientos en HTML5, CSS3, JavaScript, jQuery entre otros. Especializándome para Front End y Back End.<br><br>Estudiante activo en Desarrollador Web para Front End y Back End.<br><br>Egresado en Computación e Informática, con los conocimientos basicos de computacion y todo lo relacionado, con amplias ganas de ejercer mis conocimientos y desarrollar nuevas soluciones presentadas.<br><br>Amante de la tecnología y en busqueda de mayores conocimientos en el ambito informatico y tecnologico, aprendiendo aun para la completa implementacion de mis conocimientos.
+					</p>
 					<div class="log-mi">
 						<h4 class="icon-book">Siempre Aprendiendo</h4>
 						<h4 class="icon-desafios">Escalando Desafios</h4>
-						<h4 class="icon-grupo">Trabajo en Grupo</h4>
+						<h4 class="icon-grupo">Trabajo en Equipo</h4>
 						<h4 class="icon-trofeo">Llegar a la Meta</h4>
 					</div>
 					
@@ -100,9 +105,11 @@
 					<li><a href="#ecommerce">Plataformas E-commerce y Contenido</a></li>
 					<li><a href="#responsive">Responsive Design</a></li>
 				</ul>
+				
+				
 				<div id="dWeb">
 					<div class="titulo_habilidades">
-						<div class="circulo"><h2>85 %</h2></div>
+						<div class="circulo1"><h4>85%</h4></div>
 						<h3>Desarrollador Web</h3>
 					</div>
 					<div class="contenido_insignia">
@@ -126,7 +133,7 @@
 				</div>
 				<div id="dJS">
 					<div class="titulo_habilidades">
-						<div class="circulo"><h2>80 %</h2></div>
+						<div class="circulo2"><h4>82%</h4></div>
 						<h3>Desarrollador de JavaScript</h3>
 					</div>
 					<div class="contenido_insignia">
@@ -154,7 +161,7 @@
 				</div>
 				<div id="aHibridas">
 					<div class="titulo_habilidades">
-						<div class="circulo"><h2>60 %</h2></div>
+						<div class="circulo3"><h4>63%</h4></div>
 						<h3>Aplicaciones Hibridas</h3>
 					</div>
 					<div class="contenido_insignia">
@@ -170,7 +177,7 @@
 				</div>
 				<div id="ecommerce">
 					<div class="titulo_habilidades">
-						<div class="circulo"><h2>60 %</h2></div>
+						<div class="circulo4"><h4>61%</h4></div>
 						<h3>E-commerce (CMS)</h3>
 					</div>
 					<div class="contenido_insignia">
@@ -186,7 +193,7 @@
 				</div>
 				<div id="responsive">
 					<div class="titulo_habilidades">
-						<div class="circulo"><h2>90 %</h2></div>
+						<div class="circulo5"><h4>90%</h4></div>
 						<h3>Responsive Design</h3>
 					</div>
 					<div class="contenido_insignia">
@@ -345,7 +352,8 @@
 		<div id="contactame">
 			<h1 class="icon-ubicame">Contáctame</h1>
 			<div class="derechos">
-				<img src="imagenes/artur-foto.jpg" alt=""><p>Juan Arturo Diaz Cahuana <hr> Desarrollador Web Jr.</p>
+				<div class="log-cont"><img src="imagenes/caricatura-artur.jpg" alt=""></div>
+				<p>Juan Arturo Diaz Cahuana <hr> Desarrollador Web Jr.</p>
 			</div>
 			<div class="contactos">
 				
@@ -363,14 +371,17 @@
 				</form>
 				<div class="redes-sociales">
 					<div class="descripcion_rs">
-						Si estas interesado en mi jdkakdblasj sadhgjh ajksdgkahskd
+						Los Proyectos y desarrollos realizados en esta pagina..
 					</div>
 					<div class="redes_soc_log">
-						<div class="icon-linkedin-1">
+						<div class="iconos-red">
+							<img src="imagenes/redes/github-1.jpg" alt="">
 						</div>
-						<div class="icon-gmail">
+						<div class="iconos-red">
+							<img src="imagenes/redes/gmail-1.jpg" alt="">
 						</div>
-						<div class="icon-github">
+						<div class="iconos-red">
+							<img src="imagenes/redes/linkedIn-1.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -477,6 +488,8 @@
 			}
 			
 		});
+		
+		
 	});
 	
 	
