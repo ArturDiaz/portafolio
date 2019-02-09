@@ -82,11 +82,16 @@ $(document).ready(function(){
 		//---- formulario --- //
 		$("#btn-enviar").click(function(){
 			var nombre= $("#nombre").val();
+			var email= $("#email").val();
+			var comentario = $("#comentario").val();
 			if( nombre.trim() == "" ){
 				alert("Por favor llene todos los campos!!");
 			}else{
 				alert("Hola "+nombre + " algo salio mal!!");
 				$("#mensajeF").html("Hola "+ nombre+", me puedes encontrar en mis redes mencionadas. !!gracias!!");
+				$("#nombre").val("");
+				$("#email").val("");
+				$("#comentario").val("");
 			}
 			
 		});
